@@ -14,7 +14,9 @@ devops-git-project/
 ├── .gitignore             # Git ignored files list
 ├── README.md              # Project documentation
 └── script.sh              # Sample setup script
-          
+├── .github/workflows/   # GitHub Actions 
+│   └── main.yml
+         
 ```
 
 ---
@@ -50,13 +52,13 @@ git commit -m "Initial commit"
 ### 4. Create and Switch to Branches
 ```bash
 git checkout -b dev                   # Create dev branch
-git checkout -b feature/add-readme   # Create feature branch
+git checkout -b feature/              # Create feature branch
 ```
 
 ### 5. Push Branches to GitHub
 ```bash
 git push origin dev
-git push origin feature/add-readme
+git push origin feature
 ```
 
 ### 6. Create a Pull Request
@@ -67,7 +69,7 @@ git push origin feature/add-readme
 ### 7. Merge Branches
 ```bash
 git checkout dev
-git merge feature/add-readme
+git merge feature
 ```
 
 ### 8. Tag a Release
@@ -78,8 +80,8 @@ git push origin v1.0
 
 ### 9. Delete Feature Branch After Merge
 ```bash
-git branch -d feature/add-readme                # Local
-git push origin --delete feature/add-readme     # Remote
+git branch -d feature                           # Local
+git push origin --delete feature                # Remote
 ```
 
 ---
