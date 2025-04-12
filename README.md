@@ -13,11 +13,8 @@ devops-git-project/
 │
 ├── .gitignore             # Git ignored files list
 ├── README.md              # Project documentation
-├── deploy.sh              # Sample deployment script
-├── docs/                  # Documentation in markdown
-│   └── task1.md           # Task descriptions
-└── scripts/               # DevOps related shell scripts
-    └── setup.sh           # Sample setup script
+└── script.sh              # Sample setup script
+          
 ```
 
 ---
